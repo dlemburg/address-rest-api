@@ -1,0 +1,37 @@
+{
+  "name": "address-api",
+  "main": "lib/index.js",
+  "version": "1.0.0",
+  "description": "address api",
+  "author": "Daniel Lemburg",
+  "license": "MIT",
+  "scripts": {
+    "start:dev": "ts-node src/index.ts",
+    "prettier:check": "prettier --config .prettierrc --write \"src/**/*.ts\"",
+    "prepare": "husky install",
+    "test": "jest",
+    "build": "tsc -p ."
+  },
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "ts-jest": "^27.1.0",
+    "ts-node": "^10.4.0",
+    "tslib": "^2.3.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "eslint": "8.9.0",
+    "eslint-config-next": "12.0.10",
+    "eslint-config-prettier": "^8.3.0",
+    "husky": "^7.0.4",
+    "jest": "^27.4.3",
+    "lint-staged": "^12.3.6",
+    "prettier": "^2.5.1",
+    "supertest": "^6.2.2"
+  },
+  "lint-staged": {
+    "*.ts": "npm run prettier:check"
+  }
+}
