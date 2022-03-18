@@ -78,7 +78,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:4000/addresses/222222 S State St  Modesto CA 48109",
+					"raw": "http://localhost:4000/addresses/222222 S State St Modesto CA 48109",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -86,7 +86,7 @@
 					"port": "4000",
 					"path": [
 						"addresses",
-						"222222 S State St  Modesto CA 48109"
+						"222222 S State St Modesto CA 48109"
 					]
 				}
 			},
